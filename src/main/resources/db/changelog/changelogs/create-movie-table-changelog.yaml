@@ -1,0 +1,14 @@
+databaseChangeLog:
+  - changeset:
+      author: a.sashina
+      id: 02-create-movie-table
+      changes:
+        - sql:
+            sql: >-
+              create table if not exist movie (
+              id bigint primary key,
+              title varchar(100) not null,
+              year int not null,
+              director bigint references director(id) not null,
+              length time not null,
+              rating int not null)

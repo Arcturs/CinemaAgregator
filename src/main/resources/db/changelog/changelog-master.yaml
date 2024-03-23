@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      relativeToChangelogFile: true
+      file: "changelogs/create-director-table-changelog.yaml"
+  - include:
+      relativeToChangelogFile: true
+      file: "changelogs/create-movie-table-changelog.yaml"

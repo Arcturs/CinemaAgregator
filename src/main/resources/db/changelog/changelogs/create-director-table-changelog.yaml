@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - changeset:
+      author: a.sashina
+      id: 01-create-director-table
+      changes:
+        - sql:
+            sql: >-
+              create table if not exist director (
+              id bigint primary key,
+              fio varchar(100) not null)
